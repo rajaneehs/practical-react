@@ -1,0 +1,20 @@
+1. icons
+  react-icons
+  npm install --save react-icons
+  It has different font packages
+  Ex: for Font Awesome Icon
+    import {ICON_NAME} from 'react-icons/fa';
+  Ex: for Material Design Icon  
+    import {ICON_NAME} from 'react-icons/md';
+  
+  Props: color, size
+  Ex: <FaReact color='purple' size='10rem' />
+
+  If we want to maintain thru' the application, the same color & size of the icons
+  Instead of specifying individually, we can use 'icon context provider' that the library offers.
+
+  import { IconContext } from 'react-icons';
+  then wrap the top level component with the context provider &
+  for the value specify an object (which will have corresponding props)
+
+  NOTE: individual props values provided to component will have precedence over the context value
