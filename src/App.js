@@ -13,6 +13,9 @@ import "./App.css";
 // tooltip
 // import TooltipComponent from "./tooltips/TooltipComponent";
 
+// countup
+import CountupComponent from "./countup/CountupComponent";
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +23,7 @@ function App() {
       <NotificationsComponent /> */}
       {/* <ModalComponent /> */}
       {/* <TooltipComponent /> */}
+      <CountupComponent />
     </div>
   );
 }
