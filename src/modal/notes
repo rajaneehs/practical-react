@@ -1,0 +1,31 @@
+3. Modal
+  react-modal
+  npm install --save react-modal
+  import Modal from 'react-modal';
+
+  How to open a modal?
+  - Using 'isOpen' prop on the modal
+    <Modal isOpen={true}></Modal>
+  
+  To close the modal when clicked on the overlay or on press of ESC, then use 'onRequestClose' prop
+  Also,
+  If we don't want to close the modal on clicking on the overlay, then set
+  shoulCloseOnOverlayClick={false}
+  But this closes on the ESC key press
+
+  NOTE: There will be warning due to accessibility issues.
+  To fix this, we need to define App element on our Modal import
+    Modal.setAppElement('#root')
+
+  To provde styling, inline style
+  Using style prop, which takes in an object
+  style = {
+    {
+      overlay: {
+        backgroundColor: 'grey'
+      },
+      content: {
+        color: 'orange'
+      }
+    }
+  }
