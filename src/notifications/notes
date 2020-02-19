@@ -1,0 +1,51 @@
+2. Toast notifications
+  react-toastify
+  npm install --save react-toastify
+  import { toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+  call configure() in the root component
+  toast.configure()
+
+  within the function
+  toast('text')
+
+  Default position of the notification: top right corner
+  This can be configured using the position property on the configurtion object
+    - configurtion object will be the 2nd arg to the toast()
+
+  toast('text', {position: toast.POSITION.TOP_LEFT})
+  toast('text', {position: toast.POSITION.TOP_CENTER})
+  toast('text', {position: toast.POSITION.TOP_RIGHT})
+  toast('text', {position: toast.POSITION.BOTTOM_LEFT})
+  toast('text', {position: toast.POSITION.BOTTOM_CENTER})
+  toast('text', {position: toast.POSITION.BOTTOM_RIGHT})
+
+  Configuring the type of the notification:
+  Aside from Default type, we have 4 other types for notification,
+  success, info, warn, error
+
+  toast.success('text', {position: toast.POSITION.TOP_RIGHT})
+  toast.info('text', {position: toast.POSITION.BOTTOM_LEFT})
+  toast.warn('text', {position: toast.POSITION.BOTTOM_CENTER})
+  toast.error('text', {position: toast.POSITION.BOTTOM_RIGHT})
+
+  NOTe: Default duration of notifications is 5s
+
+  Auto close configurtion: (in ms)
+    also we can disable auto close by setting: autoClose: false
+
+      toast.info('text', {position: toast.POSITION.BOTTOM_LEFT, autoClose: 8000})
+      toast.warn('text', {position: toast.POSITION.BOTTOM_CENTER, autoClose: false})
+      toast.error('text', {position: toast.POSITION.BOTTOM_RIGHT})
+
+
+  Rendering a custom component
+    This library allows us to render our own component in the notification
+    This custom component recieves closeToast method as a prop (we can also add our own close button)
+
+    Ex.
+    toast.warn(<CustomToast />, {position: toast.POSITION.BOTTOM_CENTER})
+
+  Other configurtions:
+  Custom styling, adding different transitions, define custom transitions, delay the notifications, listen to on open & on close events & update the toast notification when it is already being displayed.
