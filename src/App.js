@@ -8,14 +8,18 @@ import "./App.css";
 // import NotificationsComponent from './notifications/NotificationsComponent'
 
 // modal
-import ModalComponent from './modal/ModalComponent'
+// import ModalComponent from './modal/ModalComponent'
+
+// tooltip
+// import TooltipComponent from "./tooltips/TooltipComponent";
 
 function App() {
   return (
     <div className="App">
       {/* <IconsComponent />
       <NotificationsComponent /> */}
-      <ModalComponent />
+      {/* <ModalComponent /> */}
+      {/* <TooltipComponent /> */}
     </div>
   );
 }

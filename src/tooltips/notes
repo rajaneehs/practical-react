@@ -1,0 +1,39 @@
+4. Tooltips
+  - tippy.js-react
+  npm install --save '@tippy.js/react'
+
+  import Tippy from '@tippy.js/react'
+  Also import the core CSS,
+  import 'tippy.js/dist/tippy.css'
+
+  To add a Tooltip to an element we simply wrap the element with Tippy component.
+
+  Variations on a Tippy component 'content' prop:
+    'content' prop to the component - Tooltip content
+    'content' prop can also accept HTML elements.
+    We can also specify 'react element' as content.
+
+  
+  Children component:
+  It is possible to specify an other react component as the Children or child to the Tippy component.
+  NOTE:
+    If we want to use a custom component as a child, we need to forward the 'ref' to the DOM node.
+    i.e., import { forwardRef } from 'react';
+    Next, wrap the arrow function (component) with forwardRef
+      i.e., pass the component as an arg to the forwardRef() function.
+
+  
+  Some important props on Tippy component:
+  1. arrow prop
+    basically determines whether the Tooltip has an arrow or not.
+
+  2. delay prop
+    adds a delay to both showing & hiding of the Tooltip
+
+  3. placement prop
+    to decide the place for the Tooltip
+    default Tooltip placement is to the top of the element
+    however if there is no place at the top, it will be rendered at the bottom. (automatically handled by the library)
+
+    possible values: left, right, top, bottom
+    
