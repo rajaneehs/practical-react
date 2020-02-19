@@ -1,0 +1,27 @@
+5. Countup
+  Display numerical data in an interesting way by adding in some animations
+  (for analytics dashboard type of application)
+  The number starts from 0 & animate towards to actual value to be displayed.
+
+  react-countup
+  import CountUp from "react-countup";
+
+  'end' prop on CountUp component which will be equal to a number
+  This value indicated the value at which the animation has to stop.
+  Ex: <CountUp end={200} />
+
+  NOTE: default duration of the animation is 2s.
+  However it is configurable using the duration prop.
+
+  What might be the initial value for the animation?
+  - zero
+    It can be controlled using the 'start' prop on the CountUp component.
+
+  
+  How to manually start, stop & pause a CounUp component?
+  - to able to do this we need to use the 'hook' implementation of the CountUp component.
+
+  NOTE: setting 'startOnMount: false' in the hook,
+  stops the countup to run when the component is loaded at first
+
+
