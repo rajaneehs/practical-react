@@ -14,7 +14,10 @@ import "./App.css";
 // import TooltipComponent from "./tooltips/TooltipComponent";
 
 // countup
-import CountupComponent from "./countup/CountupComponent";
+// import CountupComponent from "./countup/CountupComponent";
+
+// color picker
+import ColorPickerComponent from "./color-picker/ColorPickerComponent";
 
 function App() {
   return (
@@ -23,7 +26,8 @@ function App() {
       <NotificationsComponent /> */}
       {/* <ModalComponent /> */}
       {/* <TooltipComponent /> */}
-      <CountupComponent />
+      {/* <CountupComponent /> */}
+      <ColorPickerComponent />
     </div>
   );
 }

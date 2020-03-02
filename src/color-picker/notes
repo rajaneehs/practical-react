@@ -1,0 +1,14 @@
+7. Color Picker Component
+
+  react-color
+  npm install --save react-color
+
+  import {ChromePicker} from 'react-color'
+    for Chrome Devtools type color picker
+  
+  Now to pick(change) the color & to control the visibility of the color picker
+
+  To be able to change the color, we need a state variable
+
+  upDatedColor is nothing but the chosen color
+  upDatedColor.hex
