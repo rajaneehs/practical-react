@@ -1,0 +1,12 @@
+react-credit-cards
+  deals with credit cards
+
+  npm install --save react-credit-cards
+
+  import Cards from 'react-credit-cards'
+  import 'react-credit-cards/es/styles compiled.css'
+
+  Cards component
+
+  if we enter valid credit card number (or atleast the starting numbers) the corresponding card provider css will be rendered.
+

@@ -17,7 +17,10 @@ import "./App.css";
 // import CountupComponent from "./countup/CountupComponent";
 
 // color picker
-import ColorPickerComponent from "./color-picker/ColorPickerComponent";
+// import ColorPickerComponent from "./color-picker/ColorPickerComponent";
+
+// credit-cards
+import CreditCardsComponent from "./credit-cards/CreditCardsComponent";
 
 function App() {
   return (
@@ -27,7 +30,8 @@ function App() {
       {/* <ModalComponent /> */}
       {/* <TooltipComponent /> */}
       {/* <CountupComponent /> */}
-      <ColorPickerComponent />
+      {/* <ColorPickerComponent /> */}
+      <CreditCardsComponent />
     </div>
   );
 }
