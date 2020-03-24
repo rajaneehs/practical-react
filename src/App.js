@@ -20,20 +20,24 @@ import "./App.css";
 // import ColorPickerComponent from "./color-picker/ColorPickerComponent";
 
 // credit-cards
-import CreditCardsComponent from "./credit-cards/CreditCardsComponent";
+// import CreditCardsComponent from "./credit-cards/CreditCardsComponent";
+
+// date-picker
+import DatePickerComponent from "./date-picker/DatePickerComponent";
 
 function App() {
-  return (
-    <div className="App">
-      {/* <IconsComponent />
+	return (
+		<div className="App">
+			{/* <IconsComponent />
       <NotificationsComponent /> */}
-      {/* <ModalComponent /> */}
-      {/* <TooltipComponent /> */}
-      {/* <CountupComponent /> */}
-      {/* <ColorPickerComponent /> */}
-      <CreditCardsComponent />
-    </div>
-  );
+			{/* <ModalComponent /> */}
+			{/* <TooltipComponent /> */}
+			{/* <CountupComponent /> */}
+			{/* <ColorPickerComponent /> */}
+			{/* <CreditCardsComponent /> */}
+			<DatePickerComponent />
+		</div>
+	);
 }
 
 export default App;

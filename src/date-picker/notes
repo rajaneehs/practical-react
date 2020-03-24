@@ -1,0 +1,34 @@
+Cross browser date picker component
+
+react-datepicker
+npm install --save react-datepicker
+
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+
+DatePicker takes in 2 props
+1. selected - represents the date selected
+2. onChange evt handler
+
+<DatePicker selected={} onChange={} />
+
+
+Different props that can be used on DatePicker component
+1. dateFormat
+    NOTE: make sure that 'MM' is in uppercase
+    dateFormat="yyyy/MM/dd"
+
+2. minDate & maxDate props
+minDate={}
+maxDate={}
+
+3. To filter dates
+Also this is how to check for weekends in JS
+filterDate={date => date.getDay() !== 6 && date.getDay() !== 0}
+
+4. isClearable
+if this is specified or set to true, we will get a 'clear' button when a date is selected.
+
+5. For a year dropdown
+showYearDropdown
+scrollableMonthYearDropdown
